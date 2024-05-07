@@ -47,3 +47,4 @@ if ingredients_list:
     
         success_message = f'Your Smoothie is ordered, {name_on_order}!'
         st.success(success_message, icon="✅")
+        
