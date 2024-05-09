@@ -5,16 +5,6 @@ import requests
 
 # Write directly to the app
 st.title(":cup_with_straw: Customize Your Smoothie :cup_with_straw:")
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -23,11 +24,12 @@
   
 st.write(
     """Choose the fruits you want in your custom smoothie!
@@ -41,17 +31,6 @@ if ingredients_list:
     st.write(ingredients_string)
 
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients,name_on_order)
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -45,9 +47,5 @@
-  
         values ('""" + ingredients_string + """','"""+name_on_order+"""')"""
     st.write(my_insert_stmt)
     #st.stop()
